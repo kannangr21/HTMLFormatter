@@ -3,7 +3,7 @@ This is a simple HTML Formatter developed for learning Flask web framework. The 
 [Click here](https://html-formatter-flask.herokuapp.com/) to visit the site.
 
 ## Prerequisites
-- Python 3.5 or above preferred installed in the machine
+- Python 3.5 or above installed in the machine
 
 ## Installation
 1. Clone the repository
