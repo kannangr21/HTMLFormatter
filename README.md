@@ -1,4 +1,4 @@
-# HTMLFormatter
+# HTML Formatter
 This is a simple HTML Formatter developed for learning Flask web framework. The app is developed, tested in local machine and hosted in `Heroku`.  
 [Click here](https://html-formatter-flask.herokuapp.com/) to visit the site.
 
