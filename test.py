@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from html5print import HTMLBeautifier as hb
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def home():
@@ -20,4 +22,5 @@ def convert():
 @app.route("/reset",methods =["POST"])
 def reset():
     return redirect("/")
-app.run()
+if __name__ == "__main__":
+    app.run()
