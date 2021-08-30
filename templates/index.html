@@ -7,13 +7,6 @@
       <meta content="html,HTML,formatter" name="keywords">
       <title>HTML-Formatter</title>
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-      <script>
-         function copy() {
-             let textarea = document.getElementsByName("incode");
-             textarea.select();
-             document.execCommand("copy");
-         }
-      </script>
    </head>
    <body class="my-bg">
       <header class="my-header">
@@ -57,5 +50,12 @@
             </div>
          </form>
       </section>
+      <script>
+         function copy() {
+             let textarea = document.getElementsByName("incode");
+             textarea.select();
+             navigator.clipboard.writeText(textarea.value);
+         }
+      </script>
    </body>
 </html>
