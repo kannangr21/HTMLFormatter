@@ -34,7 +34,7 @@
                </select>
             </div>
             {% if flag %}
-            <textarea class="my-input" name="incode">{{code}}</textarea>
+            <textarea class="my-input" id="incode" name="incode">{{code}}</textarea>
             {% if sc %}
             <script>
                alert("Please enter the intend spaces")
@@ -52,9 +52,9 @@
       </section>
       <script>
          function copy() {
-             let textarea = document.getElementsByName("incode");
-             textarea.select();
-             navigator.clipboard.writeText(textarea.value);
+             var copyText = document.getElementById("incode");
+             copyText.select();
+             navigator.clipboard.writeText(copyText.value);
          }
       </script>
    </body>
