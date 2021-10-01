@@ -207,3 +207,18 @@ header {
     width: 100px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+  }
+  
+  .my-bg {
+    background-color: rgb(32, 29, 29);
+    background-attachment: fixed;
+  }
+
+  header {
+    background-color: rgb(32, 29, 29);
+  }
+}
