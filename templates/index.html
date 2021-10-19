@@ -6,12 +6,11 @@
       <meta content="Aligns improper HTML code." name="description">
       <meta content="html,HTML,formatter" name="keywords">
       <title>HTML-Formatter</title>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
    </head>
    <body class="my-bg">
       <header class="my-header">
          <h2 class="my-head">Html Formatter!</h2>
-         <hr id="my-line">
       </header>
       <section id="my-section">
          <ul class="content">
@@ -33,16 +32,16 @@
                   <option value="1" class="opt">1</option>
                </select>
             </div>
-            {% if flag %}
+            <span>{% if flag %}</span>
             <textarea class="my-input" id="incode" name="incode">{{code}}</textarea>
-            {% if sc %}
+            <span>{% if sc %}
             <script>
                alert("Please enter the intend spaces")
             </script>
             {% endif %}
-            {% else %}
+            {% else %}</span>
             <textarea class="my-input" placeholder="Paste/type your html code here...." name="incode"></textarea>
-            {% endif %}
+            <span>{% endif %}</span>
             <div id="buttons">
                <button type="submit" class="bt" class="my-button" formaction="convert">Convert</button>
                <button type="button" class="bt" class="my-button" onclick="copy()">Copy</button>
